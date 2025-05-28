@@ -8,5 +8,6 @@
         public decimal Payment { get; set; } // Monthly payment
         public decimal TotalInterest { get; set; } // Interest over life of the loan
         public decimal TotalCost { get; set; } // Amount borrowed plus total interest
+        public List<LoanPayment> Payments { get; set; } = [];
     }
 }
