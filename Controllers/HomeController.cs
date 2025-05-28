@@ -20,7 +20,17 @@ namespace MVCSiteTemplate.Controllers
 
         public IActionResult App()
         {
-            return View();
+            var loan = new Loan
+            {
+                Amount = 15000m,
+                Payment = 0.0m,
+                Rate = 3.5m,
+                Term = 60,
+                TotalCost = 0.0m,
+                TotalInterest = 0.0m
+            };
+
+            return View(loan);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
