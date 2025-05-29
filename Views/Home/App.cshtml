@@ -3,3 +3,32 @@
 @{
     ViewData["Title"] = "App Page";
 }
+
+<div class="container">
+    <h1 class="mb-4">
+        Loan Shark
+    </h1>
+    <div class="row mb-5">
+        <div class="col">
+            <form asp-controller="Home" asp-action="App" method="post">
+                <div class="form-row">
+                    <div class="col-12 form-group">
+                        <label asp-for="Amount">Loan Amount:</label>
+                        <input asp-for="Amount" type="number" class="form-control" min="1000" step="500" value="@Model.Amount" />
+                    </div>
+                      <div class="col-12 form-group">
+                        <label asp-for="Rate">Rate:</label>
+                        <input asp-for="Rate" type="number" class="form-control" min="1" step="0.1" value="@Model.Rate" />
+                    </div>
+                    <div class="col-12 form-group">
+                        <label asp-for="Term">Term (In months):</label>
+                        <input asp-for="Term" type="number" class="form-control" min="1" value="@Model.Term" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">
+                    Calculate
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
