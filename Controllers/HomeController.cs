@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using MVCSiteTemplate.Helpers;
 using MVCSiteTemplate.Models;
 
 namespace MVCSiteTemplate.Controllers
@@ -31,6 +32,16 @@ namespace MVCSiteTemplate.Controllers
             };
 
             return View(loan);
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult App(Loan loan)
+        {
+            var helper = new LoanHelper();
+            var newLoan = helper.GetPayments(loan);
+
+            return View(newLoan);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

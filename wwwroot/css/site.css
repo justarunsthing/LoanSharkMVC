@@ -98,3 +98,20 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+#payment-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#payment {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2B404F;
+}
+
+#table-header {
+    background-color: #2B404F;
+}
