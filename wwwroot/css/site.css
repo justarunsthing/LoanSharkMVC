@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1D5888;
-    --secondary-color: #FF993B;
+    --secondary-color: #6D9886;
     --dark-color: #292929;
-    --white-color: #E7E7E7;
+    --white-color: #DFF3E4;;
 }
 
 body {
@@ -114,4 +114,8 @@ body {
 
 #table-header {
     background-color: #2B404F;
+}
+
+.theme-color {
+    background-color: #334756;
 }
