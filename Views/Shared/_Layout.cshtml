@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LoanShark</title>
+    <title>LoanShark: A Coding Project</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MVCSiteTemplate.styles.css" asp-append-version="true" />
     <link rel="icon" type="image/png" href="img/arunpun-favicon.png">
+    <!-- Dev icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
     <header>
@@ -33,9 +35,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="https://github.com/justarunsthing/LoanSharkMVC" target="_blank">Git Repo</a>
                         </li>
-@*                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#" target="_blank">About</a>
-                        </li> *@
+                        @*
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" target="_blank">About</a>
+                            </li> 
+                        *@
                     </ul>
                 </div>
             </div>
@@ -46,7 +50,7 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="footer mt-auto py-1 sticky-footer theme-color">
+    <footer class="footer mt-auto py-2 sticky-footer theme-color">
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col order-last order-lg-first text-light">
@@ -69,11 +73,13 @@
                                 <i class="fab fa-instagram fa-2x"></i>
                             </a>
                         </div>
-@*                         <div class="col social">
-                            <a href="#" target="_blank">
-                                <i class="fab fa-youtube fa-2x"></i>
-                            </a>
-                        </div> *@
+                        @*
+                            <div class="col social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                </a>
+                            </div>
+                        *@
                     </div>
                 </div>
             </div>
